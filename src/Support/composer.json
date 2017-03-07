@@ -1,0 +1,26 @@
+{
+    "name": "qqopen/support",
+    "description": "support module for QQopen SDK.",
+    "keywords": ["qqopen", "weixin", "SDK", "support", "qqopen"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "overtrue",
+            "email": "anzhengchao@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "QQopen\\Support\\": "."
+        }
+    },
+    "minimum-stability":"dev",
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "mockery/mockery": "^1.0@dev"
+    },
+    "require": {
+        "monolog/monolog": "1.*",
+        "ext-SimpleXML": "*"
+    }
+}
