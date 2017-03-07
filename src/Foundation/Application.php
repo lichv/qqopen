@@ -83,21 +83,9 @@ class Application extends Container
         ServiceProviders\OAuthServiceProvider::class,
         ServiceProviders\MenuServiceProvider::class,
         ServiceProviders\NoticeServiceProvider::class,
-        ServiceProviders\MaterialServiceProvider::class,
-        ServiceProviders\StaffServiceProvider::class,
         ServiceProviders\UrlServiceProvider::class,
         ServiceProviders\QRCodeServiceProvider::class,
-        ServiceProviders\SemanticServiceProvider::class,
-        ServiceProviders\StatsServiceProvider::class,
-        ServiceProviders\PaymentServiceProvider::class,
-        ServiceProviders\POIServiceProvider::class,
         ServiceProviders\ReplyServiceProvider::class,
-        ServiceProviders\BroadcastServiceProvider::class,
-        ServiceProviders\CardServiceProvider::class,
-        ServiceProviders\DeviceServiceProvider::class,
-        ServiceProviders\ShakeAroundServiceProvider::class,
-        ServiceProviders\OpenPlatformServiceProvider::class,
-        ServiceProviders\MiniProgramServiceProvider::class,
     ];
 
     /**

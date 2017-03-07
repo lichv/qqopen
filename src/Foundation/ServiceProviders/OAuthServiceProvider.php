@@ -22,7 +22,7 @@
 
 namespace QQopen\Foundation\ServiceProviders;
 
-use Overtrue\Socialite\SocialiteManager as Socialite;
+use Lichv\Socialite\SocialiteManager as Socialite;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
@@ -46,14 +46,14 @@ class OAuthServiceProvider implements ServiceProviderInterface
             $scopes = $pimple['config']->get('oauth.scopes', []);
             $socialite = (new Socialite(
                 [
-                    'qqopen' => [
+                    'qp' => [
                         'open_platform' => $pimple['config']['open_platform'],
                         'client_id' => $pimple['config']['app_id'],
                         'client_secret' => $pimple['config']['secret'],
                         'redirect' => $callback,
                     ],
                 ]
-            ))->driver('qqopen');
+            ))->driver('qp');
 
             if (!empty($scopes)) {
                 $socialite->scopes($scopes);
